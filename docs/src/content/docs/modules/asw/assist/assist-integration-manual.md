@@ -1,0 +1,96 @@
+---
+title: 'Assist Integration Manual'
+description: 'Converted design document: Assist Integration Manual'
+---
+
+> **Source:** `Assist/doc/Assist_Integration_Manual.docx`  
+> **Module:** [Assist](../../../../asw/assist/)  
+> **Note:** Converted automatically from Word (.docx) with python-docx (headings, lists and tables preserved; images/embedded objects omitted).
+
+---
+
+# Integration Manual --
+
+## Dependencies
+
+## Configuration
+
+### Build Time Config
+
+### Generator Config
+
+The  module parameter description file and generator templates are located in the “generate” folder.  The generation scheme at this time relies on the ARTT generation framework developed by BMW.  Following are the recommended steps to integrate the provided generation templates and parameter description with Davinci Configurator:
+
+- Copy the “Artt/artt” framework folder into the “Generators” directory (if not already present)
+
+- Execute the “Integrate.bat” script from the Tools directory of this component to perform the necessary integration steps:
+
+- The script creates the required directories in the integration project, “Generators/Artt/” and “Generators/Components/_Schemes//bswmd”
+
+- The script then copies the required files from the CBD generate directory into the new directories.
+
+- If this is the first time integration, then perform the Davinci Configurator 3rd party component integration procedure.
+
+### Rte Config
+
+The SWC description included with this component in the “autosar” folder describes only the static portion of the SWC.  A partial SWC description describing the configurable part of the component interface is generated into the _ _Cfg.arxml file.  This description must be imported into the Rte configuration tool (Developer) using the “Merge Object” option to merge the static SWC description with the generated partial SWC description file.
+
+## Runnable Scheduling
+
+This section specifies the required runnable scheduling.
+
+## Memory Mapping
+
+### Mapping
+
+* Each …START_SEC… constant is terminated by a …STOP_SEC… constant as specified in the AUTOSAR Memory Mapping requirements.
+
+### Usage
+
+Table 1: ARM Cortex R4 Memory UsageRevision Control Log
+
+| Module | Required Feature |
+
+| --- | --- |
+
+| Rte | Port and runnable mapping. |
+
+| WdgM | CheckpointReached() API |
+
+| Constant | Notes | SWC |
+
+| --- | --- | --- |
+
+| None |  |  |
+
+| Constant | Notes | SWC |
+
+| --- | --- | --- |
+
+| AssistGeneral | General module configuration.  See Assist technical reference for details. | Assist |
+
+| Runnable | Scheduling Requirements | Privileged Mode | Trigger |
+
+| --- | --- | --- | --- |
+
+| _Per1() | Scheduled per integration project requirements | Not Required | 2ms |
+
+| Constant | Notes |
+
+| --- | --- |
+
+| ASSIST_START_SEC_VAR_CLEARED_16 |  |
+
+| Feature | RAM | ROM |
+
+| --- | --- | --- |
+
+| Full SWC |  |  |
+
+| Item # | Rev # | Change Description | Date | Author Initials |
+
+| --- | --- | --- | --- | --- |
+
+| 1 | 1 | Initial version |  | JJW |
+
+|  |  |  |  |  |

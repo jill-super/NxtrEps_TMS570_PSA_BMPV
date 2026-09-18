@@ -1,0 +1,30 @@
+---
+title: 'readme'
+description: 'Converted design document: readme'
+---
+
+> **Source:** `Fls/doc/readme.txt`  
+> **Module:** [Fls](../../../../mcal/fls/)  
+> **Note:** Plain-text file reproduced verbatim.
+
+---
+
+```text
+*********************************************************************
+  Hercules� ARM� Safety MCUs - F021 Flash API      
+  v2.01.01 Build(000830)                           
+  Build Date:  2014-08-11                                       
+*********************************************************************
+
+---------------------------------------------------------------------
+Introduction
+---------------------------------------------------------------------
+This is the Hercules F021 Flash API package.  Please refer to 
+Reference Guide for more information on API usage.
+
+---------------------------------------------------------------------
+Known Issues
+---------------------------------------------------------------------
+None known at this time.
+
+```

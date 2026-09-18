@@ -1,0 +1,32 @@
+# MIT License
+
+Copyright (c) 2026 ElectricPowerSteering_TMS570_PSA_BMPV contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+> **Note on third-party components:** this repository integrates third-party
+> software that is governed by its own licenses — Vector MICROSAR BSW modules
+> and documentation (Vector Informatik GmbH), the TI F021 Flash API and
+> HALCoGen-derived startup code (Texas Instruments), and the Gliwa T1 executive
+> (Gliwa). Those files remain subject to their vendors' license terms; the MIT
+> license above applies to the project as a whole except where vendor headers
+> state otherwise. See `docs/src/content/docs/general/origin-guide.md` for
+> which modules are third-party.
